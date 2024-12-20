@@ -1,6 +1,6 @@
 [project]
 name = "comfyui_cash"
-description = ""
+description = "DeployCash, a tool that converts workflows into WeChat and H5 with one click, and supports payments."
 version = "1.0.0"
 license = {file = "LICENSE"}
 dependencies = ["websockets", "aiohttp"]
