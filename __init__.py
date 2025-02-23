@@ -176,14 +176,14 @@ async def tech_zhulu(request):
                             result["data"]["data"], dict
                         ):
                             result_data = result["data"]["data"]
-                            print(3, f"techsid={techsid}, code={result_data["code"]}\n")
+                            print(3, f"techsid={techsid}, code={result_data['code']}\n")
 
                             if (
                                 techsid != ""
                                 and techsid != "init"
                                 and result_data["code"] == 1
                             ):
-                                print(31, f"techsid={techsid}, code={result_data["code"]}\n")
+                                print(31, f"techsid={techsid}, code={result_data['code']}\n")
                                 await update_worker_flow(result_data["name"], output)
                                 await update_worker_flow(
                                     result_data["name"], workflow, "workflow/"
